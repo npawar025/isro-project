@@ -1,0 +1,230 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --blue: #205bdb;
+  --merablue: rgb(25, 54, 183);
+}
+
+.logo-img {
+  scale: 0.1;
+}
+
+.button {
+  background-color: var(--blue);
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+  padding: 8px 20px;
+  font-size: 20px;
+  border: none;
+}
+.button:active {
+  background-color: rgb(43, 158, 229);
+}
+.form-input {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: rgb(204, 204, 227);
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  width: 300px;
+  height: 25px;
+}
+.form {
+  display: flex;
+  width: 680px;
+  justify-content: space-between;
+}
+.input-group {
+  width: 680px;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.heading {
+  padding-top: 200px;
+  margin: auto;
+  width: 680px;
+  font-size: 20px;
+  position: relative;
+}
+.sub_heading > p {
+  font-size: 27px;
+  width: 690px;
+  font-weight: 550;
+  padding: 0px 0px 0px 5px;
+}
+.sub_heading {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 690px;
+}
+
+.instruction {
+  width: 650px;
+  align-items: center;
+  height: 35px;
+  margin: auto;
+  border-radius: 19px;
+  background-color: var(--blue);
+  color: white;
+  padding: 5px 20px 5px 20px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.sentence span {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.display-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue);
+  border-radius: 20px;
+  width: 650px;
+  height: 50px;
+  margin: auto;
+  justify-content: center;
+  padding: 8px 20px;
+  margin-bottom: 8px;
+}
+
+.display-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.display-box th {
+  text-align: left;
+  font-size: 20px;
+  color: white;
+}
+
+.display-box td {
+  text-align: left;
+  color: white;
+  font-size: 21px;
+}
+
+.small {
+  font-size: 14px !important;
+}
+.large {
+  font-size: 24px;
+}
+
+.display-box th.center {
+  width: 56%;
+}
+
+.display-box th.city {
+  width: 29%;
+}
+
+.display-box th.state {
+  width: 15%;
+}
+
+.selected {
+  background-color: cyan;
+}
+
+.display-container {
+  padding-bottom: 300px;
+}
+
+.search-button {
+  position: relative;
+  scale: 1.5;
+  left: -40px;
+  text-indent: -999px;
+  overflow: hidden;
+  width: 17px;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.search-button:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 10px; /* Add padding to the main container */
+  }
+
+  .heading {
+    width: 90%;
+    padding-top: 10px; /* Adjust the top padding for the heading */
+  }
+
+  .sub_heading > p {
+    font-size: 20px; /* Decrease the font size for the subheading */
+  }
+
+  .sub_heading {
+    width: 90%;
+  }
+
+  .instruction {
+    width: 90%;
+    padding-top: 16px;
+    font-size: 16px; /* Decrease the font size for the instruction */
+  }
+  .input-group {
+    width: 90%;
+  }
+
+  .form {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  .inputAndSearch {
+    width: 40%;
+    margin-right: 60px;
+  }
+  .form-input {
+    font-size: 9px;
+    height: 40%;
+    margin-left: -4px;
+    margin-right: 2px;
+    width: 150%; /* Make the input field full width */
+    margin-bottom: 10px; /* Add spacing between the input field and buttons */
+    font-size: 9px; /* Decrease the font size for the input field */
+  }
+
+  .button {
+    width: 30%; /* Make the buttons full width */
+    height: 70%;
+    font-size: 9px; /* Decrease the font size for the buttons */
+  }
+
+  .display-box {
+    width: 90%;
+    height: 60px;
+  }
+  .display-box th {
+    font-size: 10px; /* Decrease the font size for the table header */
+  }
+
+  .display-box td {
+    font-size: 12px; /* Decrease the font size for the table data */
+  }
+  .search-button {
+    left: 70px;
+    top: -40px;
+  }
+}
